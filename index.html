@@ -16,59 +16,76 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/output.css" />
     <title>Frontend Mentor | Blog preview card</title>
   </head>
-  <body>
-    <div class="container">
-      <main>
-        <!-- Image Area -->
-        <div class="img-container">
-          <img
-            src="./assets/images/illustration-article.svg"
-            alt="blog image"
-          />
-        </div>
+  <body class="grid place-items-center bg-yellow">
+    <main
+      class="container border-1 border-darkGray max-w-sm bg-white mx-6 p-4 my-10 space-y-6 flex flex-col shadow-2xl shadow-darkGray rounded-md md:max-w-md"
+    >
+      <!-- Image Area -->
+      <img
+        src="./assets/images/illustration-article.svg"
+        alt="blog image"
+        class="max-w-sm block object-cover px-auto rounded-md md:max-w-lg"
+      />
 
-        <!-- Content Area -->
-        <div class="content-container">
-          <div class="category">
-            <p>Learning</p>
+      <!-- Category -->
+      <section id="category">
+        <div class="flex flex-col space-y-3">
+          <div
+            class="bg-yellow rounded-sm text-center py-1 font-bold text-lg w-24"
+          >
+            Learning
           </div>
-          <div class="publish-date">
+          <!-- Publish Date -->
+          <div class="font-medium text-md">
             <p>Published 21 Dec 2023</p>
           </div>
+          <!-- Title -->
           <div>
-            <a href="#" class="title">
-              <h2>HTML & CSS foundations</h2>
+            <a
+              href="#"
+              target="_blank"
+              class="no-underline text-darkGray font-bold text-2xl text-start active:bg-yellow"
+            >
+              <h1 class="hover:bg-yellow transition delay-300 ease-in-out">
+                HTML & CSS foundations
+              </h1>
             </a>
           </div>
-          <div class="description">
+          <!-- Description -->
+          <div class="text-gray md:text-left md:text-xl">
             <p>
               These languages are the backbone of every website, defining
               structure, content, and presentation.
             </p>
           </div>
+
+          <!-- Author Area -->
+
+          <div
+            class="flex flex-row space-x-2 pt-4 place-items-center font-bold text-lg"
+          >
+            <!-- Author's Image -->
+            <img
+              src="./assets/images/image-avatar.webp"
+              alt="profile image"
+              class="size-8"
+            />
+
+            <!-- Author's Name -->
+            <h2>Greg Hooper</h2>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <!-- Author Area -->
-        <div class="author-container">
-          <img
-            src="./assets/images/image-avatar.webp"
-            alt="profile image"
-            class="user-img"
-          />
-
-          <h3 class="author-name">Greg Hooper</h3>
-        </div>
-      </main>
-    </div>
-
-    <div class="attribution">
+    <div id="attribution" class="px-4 text-center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Musa Jamaldeen</a>.
+      >. Coded by <a href="https://github.com/jd33n27">Musa Jamaldeen</a>.
     </div>
   </body>
 </html>

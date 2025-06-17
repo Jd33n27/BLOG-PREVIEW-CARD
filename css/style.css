@@ -1,4 +1,14 @@
-.attribution {
+@import "tailwindcss";
+
+@theme {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-darkGray: hsl(0, 0%, 7%);
+  --color-gray: hsl(0, 0%, 42%);
+  --shadow-2xl: 10px 10px hsl(0, 0%, 7%);
+}
+
+/* .attribution {
   font-size: 11px;
   text-align: center;
 }
@@ -132,4 +142,4 @@ body {
     font-weight: 800;
     font-size: 40px;
   }
-}
+} */
