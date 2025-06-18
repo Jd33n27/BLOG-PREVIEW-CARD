@@ -5,6 +5,7 @@
   --color-white: hsl(0, 0%, 100%);
   --color-darkGray: hsl(0, 0%, 7%);
   --color-gray: hsl(0, 0%, 42%);
+  --color-blue: hsl(228, 45%, 44%);
   --shadow-2xl: 10px 10px hsl(0, 0%, 7%);
 }
 
